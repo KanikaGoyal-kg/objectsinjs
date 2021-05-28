@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <h1>Objects in html</h1>
+    </head>
+    <body>
+        <script>
+        var personalDetails = {
+            fname: 'Kanika',
+            lname: 'goyal',
+            age: 24,
+            occupation: 'job',
+            id: ""
+        };
+        //To get details of object
+        document.write(personalDetails);
+        document.write("<br>");
+        document.write(personalDetails.fname);
+        document.write("<br>");
+       personalDetails.occupation = 'business';
+       document.write(personalDetails.occupation);
+       document.write("<br>");
+       personalDetails.city = 'Chandigarh';
+       document.write(personalDetails);
+       console.log(personalDetails);
+        </script>
+        </br>
+        <h1>Reverse the string in real time</h1>
+        <input type="text" id="enterData" onkeyup="reversestring()">
+        <input type="text" id="showData">
+        <script>
+            function reversestring() {
+                var str = document.getElementById('enterData').value;
+                var newString = "";
+                for (var i= str.length - 1; i>0; i--) {
+                    newString += str[i];
+            }
+            document.getElementById('showData').value = newString
+
+            }
+        </script>
+    </body>
+</html>
